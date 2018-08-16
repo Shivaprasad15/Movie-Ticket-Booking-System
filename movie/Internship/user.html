@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	#tbo{
+	border-bottom: 2px solid black;
+	border-top: 2.9999px solid black;
+	
+	}
+	#a2{
+		margin-top:15px;
+	}
+  
+  
+  
+  </style>
+  
+  
+  
+</head>
+
+<body>
+<nav class="navbar navbar-inverse" id="a2">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HelpDesk</a>
+    </div>
+    <ul class="nav navbar-nav navbar-middle">
+      <li class="active"><a href="F:\movie\Internship\nav.html">Home</a></li>
+      <li><a href="F:\movie\Internship\user.html">Users</a></li>
+	  <li><a href="#">Agent</a></li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="form-group col-xs-2"></div>
+<div class="container form-group col-xs-8">
+  <h2>Users</h2><br>
+            
+  <table class="table table-hover">
+  
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+		<th>Created Date</th>
+		<th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tbo">
+      <tr>
+        <td>John</td>
+		<td>john@example.com</td>
+        <td>1234567897</td>
+		<td>13-02-2012</td>
+        
+		<td><button class="btn btn-success" data-toggle="modal" data-target=".a">Edit</button>
+			<button class="btn btn-danger">Delete</button>
+		</td>
+		
+      </tr>
+      <tr>
+        <td>Amith</td>
+		<td>amith@gmail.com</td>
+        <td>9548667897</td>
+		<td>25-07-2012</td>
+        
+		<td><button class="btn btn-success" data-toggle="modal" data-target=".a">Edit</button>
+			<button class="btn btn-danger">Delete</button>
+		</td>
+		
+      </tr>
+       <tr>
+        <td>Obito</td>
+		<td>obi@gmail.com</td>
+        <td>9548667123</td>
+		<td>20-01-2016</td>
+        
+		<td><button class="btn btn-success" data-toggle="modal" data-target=".a">Edit</button>
+			<button class="btn btn-danger">Delete</button>
+		</td>
+		
+      </tr>
+	   <tr>
+        <td>Gaara</td>
+		<td>sand@gmail.com</td>
+        <td>9548656325</td>
+		<td>10-11-2010</td>
+        
+		<td><button class="btn btn-success" data-toggle="modal" data-target=".a">Edit</button>
+			<button class="btn btn-danger">Delete</button>
+		</td>
+		
+      </tr>
+    </tbody>
+  </table>
+  
+  <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#add">Add User</button>
+</div>
+<div class="modal fade" id="add" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><h3>Add User</h3></h4>
+        </div>
+        <div class="modal-body">
+         <form action="basic.html" method="post" class="form-group">
+	
+	
+	<label for="text" >Name</label><br>
+	<input type="text"  class="form-control" id="text" required placeholder="Name" name="un"><br>
+	
+	
+	
+	
+	
+	<label for="email" >Email</label><br>
+	<input type="email"  class="form-control" id="text" required placeholder="Email" name="un"><br>
+	
+	<label for="number" >Contact</label><br>
+	<input type="number"  class="form-control" id="text" required placeholder="Phone" name="un"><br>
+	
+	<label for="text" >DOB</label><br>
+	<input type="date"  class="form-control" id="text" required placeholder="DOB" name="un"><br>
+	
+	<label for="text" >Gender</label>
+	<div class="radio">
+  <label><input type="radio" name="optradio">Male</label>
+</div>
+
+<div class="radio">
+  <label><input type="radio" name="optradio">Female</label>
+</div>
+	
+	<button type="submit" class="btn btn-success btn-md">Register</button>
+	
+</form>
+<div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+<div  class="modal fade a" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Edit</h3>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="post" class="form-group">
+	
+	
+	<label for="text" >Name</label><br>
+	<input type="text"  class="form-control" id="text" required placeholder="Name" name="un"><br>
+	
+	
+	
+	
+	
+	<label for="email" >Email</label><br>
+	<input type="email"  class="form-control" id="text" required placeholder="Email" name="un"><br>
+	
+	<label for="number" >Contact</label><br>
+	<input type="number"  class="form-control" id="text" required placeholder="Phone" name="un"><br>
+	
+	<label for="text" >Date</label><br>
+	<input type="date"  class="form-control" id="text" required placeholder="DOB" name="un"><br>
+	
+	
+	
+	<button type="submit" class="btn btn-success btn-md">Update</button>
+	
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  
+
+
+
+</body>
+</html>
